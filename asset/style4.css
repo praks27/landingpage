@@ -16,7 +16,7 @@ body{
     float: left;
     display: block;
     width: 25%;
-    padding:20px 20px 20px 20px;
+    padding:20px 20px 20px 50px;
     background-color: slateblue;
     justify-content: center;
     align-items: center;
@@ -24,8 +24,8 @@ body{
     letter-spacing: 1px;
     text-decoration: none;
     font-family: acme,sans-serif;
-    margin-right: 20px;
-    height: 130vh;
+    margin-right: 50px;
+    height: 150vh;
 }
 .menukiri a{
     text-decoration: none;
@@ -54,6 +54,7 @@ body{
     font-size: 1.2rem;
     text-indent:2em;
     justify-content: center;
-    height: 130vh;
+    height: 150vh;
+    margin-left: 20px auto;
 }
 
