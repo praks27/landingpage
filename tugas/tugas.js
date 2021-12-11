@@ -1,28 +1,42 @@
-document.write("1.hasil ujian (by  java script)");
+document.write("1.nilai rata rata (by JavaScript)");
 let uts;
-uts = 20;
+uts = 75;
 let uas;
 uas = 45;
-let note;
+let nilairata = (uts + uas )/2;
 const nama = "Aditya";
-let nilairata2 =(uts +uas/2);
-if(nilairata2 >=75){
-    note = "selamat anda LULUS";
-}else if(nilairata2 >=50){
-    note = "selamat anda REMIDI";
-}else {
-    note = "anda tidak LULUS";
+document.write("<br><br/> nama : " + nama + "</br> nilai uts : " + uts + "</br>nilai UAS" + uas + "</br>nilai rata-rata : " + Math.ceil(nilairata));
+if (nilairata >= 75){
+  nilairata = "LULUS";
+}else if (nilairata >= 50){
+  nilairata = "REMIDI";
+}else{
+  nilairata = "TIDAK LULUS";
 }
-document.write("</br>nama : " + nama +"<br/>uts : " + uts + "</br>UAS : " + uas + "</br>nilai rata - rata : " + nilairata2 +"</br>" +note);
-// nomor 2
-document.write("</br>2.array harga");
-let harga = [20000 ,40000 ,65000 ,80000]
-for(let i = 1;i >=harga.length;i++){
-    if (harga >= 50000){
-        diskon = 0.5 * harga;
-    }else{
-        diskon = "tidak mendapatkan diskon"
-    }
-}  
-document.write("<br/> data barang : " + harga[i]);
-// document.write("data barang 0 : " +"harga =" +harga[h]+"</br>")
+document.write("</br>selamat anda " + nilairata);
+
+document.write("<br><br>2.array harga");
+let diskon;
+let harga =[20000, 40000 , 65000 ,80000];
+for(let i = 0; i < harga.length; i++){
+  document.write("<br>data barang-" + i + " harga = " + harga[i]);
+  if(harga[i] >= 50000){
+    diskon = 0.05 * harga[i];
+    document.write("<br>diskon 5% = " + diskon);
+  }
+}
+document.write("<br><br>3.OSPEK");
+let daftar;
+daftar = "sudah"
+let bayar;
+bayar = 1;
+let ospek;
+if (daftar == "sudah" && bayar ==1 ){
+  ospek = "silahkan mengikuti ospek";
+}else if(daftar == "sudah" && bayar ==0){
+  ospek = "silahkan bayar terlebih dahulu";
+}else{
+  ospek = "silahkan hubungi administrasi";
+}
+  document.write("<br>"+ospek);
+
