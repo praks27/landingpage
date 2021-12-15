@@ -16,8 +16,8 @@ if (nilairata >= 75){
 document.write("</br>selamat anda " + nilairata);
 
 document.write("<br><br>2.array harga");
-let diskon;
-let total = 0;
+// let diskon;
+// let total = 0;
 let harga =[20000, 40000 , 65000 ,80000];
 let ttl_diskon = 0;
 for(let i = 0; i < harga.length; i++){
